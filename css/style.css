@@ -377,9 +377,22 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 150%;
-  -webkit-transform: translate(4%, -62%);
-          transform: translate(4%, -62%);
+  max-width: 160%;
+  -webkit-transform: translate(-13%, -62%);
+          transform: translate(-13%, -62%);
+}
+@media (max-width:1400px) {
+  .header .col_right .img_container img {
+    max-width: 150%;
+    -webkit-transform: translate(-8%, -62%);
+            transform: translate(-8%, -62%);
+  }
+}
+@media (max-width:1200px) {
+  .header .col_right .img_container img {
+    -webkit-transform: translate(4%, -62%);
+            transform: translate(4%, -62%);
+  }
 }
 @media (max-width:992px) {
   .header .col_right .img_container img {
