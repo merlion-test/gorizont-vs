@@ -8,22 +8,18 @@ $(document).ready(function () {
 	$('#requestForm .former').prepend('<input type="hidden" name="form_id" value="' + $('#requestFormId').data('id') + '">');
 
 	$('#form_input_i1 input').attr({
-		required: 'required',
 		placeholder: 'Имя',
 		autocomplete: 'off'
 	});
 	$('#form_input_i2 input').attr({
-		required: 'required',
 		placeholder: 'Компания',
 		autocomplete: 'off'
 	});
 	$('#form_input_i3 input').attr({
-		required: 'required',
 		placeholder: 'Телефон',
 		autocomplete: 'off'
 	});
 	$('#form_input_i4 input').attr({
-		required: 'required',
 		placeholder: 'E-mail',
 		autocomplete: 'off'
 	});
@@ -32,7 +28,9 @@ $(document).ready(function () {
 		autocomplete: 'off'
 	});
 
-	$('.sendbutton').wrap('<a class="btn btn_buy">').attr('value', 'Купить');
+	// $('.sendbutton').wrap('<div>').attr('value', 'Купить');
+	$('.sendbutton').addClass('btn btn_buy').attr('value', 'Купить');
+
 
 	$('#form_input_i1').append('<label>Имя</label>').append('<span></span>');
 	$('#form_input_i2').append('<label>Компания</label>').append('<span></span>');
@@ -47,4 +45,5 @@ $(document).ready(function () {
 	$('.checkbox-field, .checkbox-field+.input.text').wrapAll("<div class='policy-checkbox'>");
 
 	$('.policy-checkbox .input').addClass('policy_text');
+	// $('#policyCheckbox').attr('required', 'required');
 });

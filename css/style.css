@@ -319,6 +319,10 @@ h2 {
   }
 }
 
+.highlight {
+  color: #2483ff;
+}
+
 .header {
   padding: 2rem 0 6rem;
   background: radial-gradient(42.26% 111.55% at 38.61% 61.64%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(112.79deg, rgba(190, 236, 255, 0) 1.25%, #8ee4ff 38.54%, #2d8dff 80.64%, #3d7fff 100%);
@@ -781,11 +785,11 @@ h2 {
 #requestForm {
   display: none;
   cursor: initial;
-  padding: 1.5625rem 3.75rem;
+  padding: 5rem 3.75rem 1.9375rem;
 }
 @media (max-width:576px) {
   #requestForm {
-    padding: 1.5625rem;
+    padding: 3.125rem 1.5625rem 1.5625rem;
   }
 }
 #requestForm .register {
@@ -873,13 +877,6 @@ h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-#requestForm input[type=submit] {
-  font-family: inherit;
-  background-color: transparent;
-  color: #ffffff;
-  margin: 0 1.5625rem 0 0;
-  padding: 0;
-}
 #requestForm .checkbox-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,8 +924,25 @@ h2 {
   font-family: inherit;
   font-size: 0.875rem;
 }
-#requestForm .btn {
+#requestForm .sendbutton {
+  font-family: inherit;
+  font-size: 1rem;
   margin: 0 auto;
+  padding: 1.0625rem 3.75rem;
+}
+#requestForm .hero-form {
+  text-align: center;
+}
+#requestForm .hero-form p {
+  color: #252b31;
+}
+#requestForm .hero-form .inps {
+  margin: 0 !important;
+  color: #fd463a;
+}
+#requestForm .hero-form .inps .post_ramka,
+#requestForm .hero-form .inps .post_ramka p {
+  color: #252b31;
 }
 
 .fancybox-container {
@@ -936,7 +950,7 @@ h2 {
 }
 
 .fancybox-slide--html .fancybox-close-small {
-  top: 2rem;
+  top: 2.625rem;
   right: 4.375rem;
   outline: none;
   border: none;
